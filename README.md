@@ -1,19 +1,29 @@
 # ICE DevTools
+## Development Utilities and Experimental Support Layer
 
-[![ICE Ecosystem](https://img.shields.io/badge/ICE-Ecosystem-8FB9FF?style=flat)](#)
-[![Docs](https://img.shields.io/badge/docs-ICE--Docs-8FB9FF?style=flat)](https://github.com/francescomaiomascio/ice-docs)
-[![Status](https://img.shields.io/badge/status-active--development-6B7280?style=flat)](#)
-[![Language](https://img.shields.io/badge/python-3.x-111827?style=flat)](#)
-[![License](https://img.shields.io/badge/license-MIT-7A7CFF?style=flat)](#)
+ICE DevTools collects **generic development utilities**
+used across the ICE ecosystem.
 
-ICE DevTools is a **collection of development utilities** used across the ICE
-ecosystem.
+It exists to support **engineering work**, **experimentation**, and
+**cross-repository reuse** without introducing new authority,
+semantics, or architectural commitments.
 
-It groups shared helpers, detection logic, formatting tools, parsing utilities,
-and experimental pipelines that support development and internal workflows.
+ICE DevTools is intentionally **non-opinionated** and **non-canonical**.
 
-ICE DevTools is intentionally generic.
-Its scope and structure are expected to evolve.
+---
+
+## Position in the ICE Ecosystem
+
+ICE DevTools is a **supporting repository**, not a core domain.
+
+- It does not define axioms or invariants
+- It does not participate in execution or governance
+- It does not introduce architectural constraints
+- It does not establish public contracts
+
+Its role is purely **auxiliary**.
+
+Nothing in ICE depends semantically on DevTools.
 
 ---
 
@@ -21,63 +31,99 @@ Its scope and structure are expected to evolve.
 
 ICE DevTools exists to:
 
-- Host reusable development utilities
-- Support internal tooling and experiments
-- Centralize helpers used across ICE repositories
-- Reduce duplication of low-level logic
-- Act as a sandbox for future refactors
+- host reusable, low-level development utilities
+- reduce duplication across ICE repositories
+- support prototyping and experimentation
+- provide temporary homes for evolving helpers
+- assist development, testing, and refactoring workflows
 
-This repository does not represent a finalized product.
+This repository optimizes **developer velocity**, not system meaning.
 
 ---
 
 ## Scope
 
-ICE DevTools may include:
+ICE DevTools may contain:
 
-- Detection and parsing utilities
-- Formatting and export helpers
-- Generation pipelines and prototypes
-- Validation and normalization logic
-- Shared types and configuration helpers
+- parsing and detection helpers
+- formatting and transformation utilities
+- validation and normalization logic
+- experimental pipelines and prototypes
+- shared development-time abstractions
+- internal tooling and scripts
 
-The contents of this repository are **subject to change**.
+All contents are considered **non-canonical**.
 
 ---
 
-## Design Notes
+## Stability and Evolution
 
-- Stability is not guaranteed
+ICE DevTools is intentionally unstable.
+
 - APIs may change without notice
-- Modules may be moved, renamed, or removed
-- Functionality may later migrate to other ICE repositories
+- Modules may be moved or removed
+- Functionality may migrate to other repositories
+- Nothing here is guaranteed long-term
 
-This repository prioritizes **flexibility over rigidity**.
+This is expected and by design.
+
+Stability belongs to Foundation and core domains,
+not to development tooling.
+
+---
+
+## Authority and Governance
+
+ICE DevTools has **no authority**.
+
+- Code here does not justify execution
+- Utilities here do not define behavior
+- Nothing here overrides Foundation constraints
+
+Any tool or helper that becomes structurally important
+must be promoted into an appropriate ICE domain
+and formalized accordingly.
 
 ---
 
 ## Usage
 
-ICE DevTools is intended for **internal use** within the ICE ecosystem.
+ICE DevTools is intended for **internal use** only.
 
 It may be consumed by:
-- ICE Studio
-- ICE AI
-- ICE Runtime
-- Development and testing workflows
 
-External usage is not currently a goal.
+- ICE Runtime
+- ICE Engine
+- ICE AI
+- ICE Studio
+- internal development and test pipelines
+
+External usage is neither required nor encouraged.
+
+---
+
+## Canonical Status
+
+ICE DevTools is **explicitly non-canonical**.
+
+If this repository disappeared,
+the conceptual integrity of ICE would remain intact.
+
+This is a feature, not a limitation.
 
 ---
 
 ## Status
 
-This project is under **active development** and refactoring.
-Consider all APIs provisional.
+ICE DevTools is under **active development**.
+
+Expect change.
 
 ---
 
-## License
+## Notes
 
-This project is licensed under the terms of the MIT license.
-See the `LICENSE` file for details.
+Not everything belongs in the architecture.
+
+ICE DevTools exists so that  
+**the architecture can remain clean**.
