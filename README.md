@@ -1,127 +1,129 @@
-# Security Policy
+# ICE DevTools
+## Development Utilities and Experimental Support Layer
+
+ICE DevTools collects **generic development utilities**
+used across the ICE ecosystem.
+
+It exists to support **engineering work**, **experimentation**, and
+**cross-repository reuse** without introducing new authority,
+semantics, or architectural commitments.
+
+ICE DevTools is intentionally **non-opinionated** and **non-canonical**.
+
+---
+
+## Position in the ICE Ecosystem
+
+ICE DevTools is a **supporting repository**, not a core domain.
+
+- It does not define axioms or invariants
+- It does not participate in execution or governance
+- It does not introduce architectural constraints
+- It does not establish public contracts
+
+Its role is purely **auxiliary**.
+
+Nothing in ICE depends semantically on DevTools.
+
+---
 
 ## Purpose
 
-This document defines the **security posture** of this repository
-within the ICE ecosystem.
+ICE DevTools exists to:
 
-The purpose of this policy is to:
+- host reusable, low-level development utilities
+- reduce duplication across ICE repositories
+- support prototyping and experimentation
+- provide temporary homes for evolving helpers
+- assist development, testing, and refactoring workflows
 
-- define the operational security scope of this project
-- clarify what constitutes a security issue
-- establish reporting and disclosure expectations
-- preserve alignment with ICE Foundation invariants
-
-This repository contains **executable code and/or operational logic**.
-Security concerns therefore include both **conceptual** and **implementation-level** risks.
+This repository optimizes **developer velocity**, not system meaning.
 
 ---
 
-## Relationship to ICE Foundation
+## Scope
 
-This project is **downstream of ICE Foundation**.
+ICE DevTools may contain:
 
-As such:
+- parsing and detection helpers
+- formatting and transformation utilities
+- validation and normalization logic
+- experimental pipelines and prototypes
+- shared development-time abstractions
+- internal tooling and scripts
 
-- ICE Foundation defines axioms and structural invariants
-- This repository must comply with those constraints
-- No implementation decision may violate Foundation authority
-
-Any security issue that implies a violation of Foundation axioms
-is considered **critical**, regardless of exploitability.
-
----
-
-## Security Scope
-
-Security concerns for this repository include:
-
-- unauthorized execution or capability escalation
-- violation of authority or governance constraints
-- bypass of traceability or accountability mechanisms
-- nondeterministic or unreconstructable execution paths
-- unsafe handling of external inputs or providers
-- incorrect enforcement of permissions or boundaries
-- vulnerabilities in execution, IPC, or integration surfaces
-
-Both **design flaws** and **implementation defects** are in scope.
+All contents are considered **non-canonical**.
 
 ---
 
-## Out of Scope
+## Stability and Evolution
 
-The following are **not** handled in this repository:
+ICE DevTools is intentionally unstable.
 
-- vulnerabilities in third-party providers or models
-- infrastructure or cloud configuration issues
-- operating system or hardware security
-- vulnerabilities in unrelated downstream products
+- APIs may change without notice
+- Modules may be moved or removed
+- Functionality may migrate to other repositories
+- Nothing here is guaranteed long-term
 
-Such issues must be reported to the appropriate owner.
+This is expected and by design.
 
----
-
-## Supported Versions
-
-This project does not guarantee long-term security support
-for all historical versions.
-
-Security fixes apply to:
-
-- the current main branch
-- active development branches, when applicable
-
-Users are expected to track the latest stable state.
+Stability belongs to Foundation and core domains,
+not to development tooling.
 
 ---
 
-## Reporting a Security Issue
+## Authority and Governance
 
-Security issues should be reported by opening a **GitHub Issue**
-in this repository.
+ICE DevTools has **no authority**.
 
-Reports must include:
+- Code here does not justify execution
+- Utilities here do not define behavior
+- Nothing here overrides Foundation constraints
 
-- a clear description of the issue
-- affected components or files
-- security impact (authority, execution, data, governance)
-- steps to reproduce, if applicable
-
-If the issue involves **active exploitation**, clearly mark it as such.
+Any tool or helper that becomes structurally important
+must be promoted into an appropriate ICE domain
+and formalized accordingly.
 
 ---
 
-## Disclosure Policy
+## Usage
 
-There is **no private disclosure channel** by default.
+ICE DevTools is intended for **internal use** only.
 
-ICE favors **transparent and public resolution** unless:
+It may be consumed by:
 
-- active exploitation is demonstrated
-- coordinated disclosure is explicitly requested
+- ICE Runtime
+- ICE Engine
+- ICE AI
+- ICE Studio
+- internal development and test pipelines
 
-Maintainers may temporarily restrict discussion
-to prevent harm, but transparency is the default.
-
----
-
-## Security Definition (ICE Context)
-
-Within ICE, security is defined as:
-
-> The preservation of explicit authority, traceable execution,
-> and governable behavior over time.
-
-Any behavior that undermines these properties
-is considered a security failure,
-even if no traditional exploit is involved.
+External usage is neither required nor encouraged.
 
 ---
 
 ## Canonical Status
 
-This policy is authoritative for this repository.
+ICE DevTools is **explicitly non-canonical**.
 
-It complements, and does not override,
-the axioms, invariants, and governance rules
-defined in ICE Foundation.
+If this repository disappeared,
+the conceptual integrity of ICE would remain intact.
+
+This is a feature, not a limitation.
+
+---
+
+## Status
+
+ICE DevTools is under **active development**.
+
+Expect change.
+
+---
+
+## Notes
+
+Not everything belongs in the architecture.
+
+ICE DevTools exists so that  
+**the architecture can remain clean**.
